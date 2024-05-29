@@ -1,0 +1,221 @@
+/* Styles de base pour le thème sombre */
+body {
+    background-color: #3b3b3b; /* Fond sombre */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+    
+}
+
+/* Conteneur principal */
+#page {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(255, 255, 255, 0.568);
+    
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.40rem; /* Taille de la police */
+    
+}
+
+/* Informations de l'utilisateur */
+.userinfo {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: blue;
+    /* text-shadow: 0 2px 4px rgba(255, 255, 255, 0.568); */
+    
+
+}
+
+/* Titre des sections */
+.userinfo:first-child {
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+    /* text-shadow: 0 2px 4px rgba(255, 255, 255, 0.568); */
+    
+
+}
+
+/* SVG et graphiques */
+.graphDiv {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: blue;
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.40rem; /* Taille de la police */}
+
+.graphDiv svg {
+    width: 100%;
+    max-height: 400px;
+    
+}
+
+/* Texte dans les graphiques SVG */
+.graphDiv text {
+    fill: blue;
+
+}
+
+
+/* Lignes dans les graphiques */
+.graphDiv line, .graphDiv polyline, .graphDiv polygon {
+    stroke: blue;
+}
+
+.graphDiv polygon {
+    fill: rgb(255, 255, 255);
+}
+
+/* Boutons */
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(255, 255, 255, 0.568);
+    margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Messages d'erreur */
+#errorMessage {
+    color: #f44336;
+    padding: 1px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 1rem; /* Taille de la police */
+
+}
+
+/* Styles pour les labels et les champs de formulaire */
+.form-label,
+.form-control {
+    display: block; /* Affichage en bloc pour occuper toute la largeur */
+    color: blue; /* Couleur du texte par défaut */
+    padding: 8px; /* Remplissage intérieur */
+    line-height: 1.5; /* Hauteur de ligne */
+    margin: auto; /* Centrer horizontalement */
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.568);
+    
+
+}
+
+/* Style spécifique pour les champs de formulaire */
+.form-control {
+    width: 50%; /* Largeur des champs de formulaire */
+    background-color: #fff; /* Couleur de fond */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 4px; /* Rayon de la bordure */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transition pour l'effet de survol */
+    font-size: 1rem; /* Taille de la police */
+
+}
+
+/* Style spécifique pour les labels */
+.form-label {
+    font-weight: bold; /* Texte en gras */
+    font-size: 2rem; /* Taille de la police */
+    
+}
+
+.mb-3 {
+    font-size: 7rem;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.568);
+    color: blue; /* Texte clair */
+}
+
+#icone{
+    background-image: url(ZONE01-ROUEN-NORMANDIE-HORIZON-FOND-NOIR-1.png);
+    height: 3rem;
+    width: 7rem;
+    background-size: 100% 100%;
+    margin-bottom: 1rem;
+}
+
+.footer-container {
+    position: fixed; /* Maintient le footer en bas de la page */
+    bottom: 0; /* Aligner le footer en bas */
+    left: 0; /* Aligner le footer à gauche */
+    width: 100%; /* Largeur complète */
+    background-color: #222; /* Couleur de fond */
+    color: blue;
+    text-align: center; /* Centrer le texte */
+    padding: 10px 0; /* Padding vertical */
+    /* text-shadow: 0 2px 4px rgba(255, 255, 255, 0.568); */
+    box-shadow: 0 2px 4px rgb(255, 255, 255, 0.568);
+}  
+  .footer-copyright {
+    font-size: 1.25rem;
+  }
+  
+
+  /* Toggle password visibility button */
+button[type="button"] {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    color: #ccc; /* Light gray color to match the dark theme */
+    font-size: 6rem; /* Larger font size for easy interaction */
+    position: relative; /* Positioned relative to its normal position */
+    right: 0px; /* Adjust right position to align it close to the edge of the input */
+    padding: 0 10px; /* Padding to increase clickable area */
+    outline: none; /* Remove outline to adhere to the style */
+    animation: bounce 3s ease infinite;
+
+}
+
+button[type="button"]:hover {
+    color: #fff; /* White color on hover for better visibility */
+    
+}
+
+button[type="button"]:focus {
+    outline: none; /* Ensure no outline on focus for a cleaner look */
+    animation: bounce 3s ease infinite;
+}
+
+/* Styling for the eye icon specifically if needed */
+#toggleIcon {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+        animation: bounce 3s ease infinite;
+
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    animation: bounce 3s ease infinite;
+    color: #f44336;
+    font-size: 2rem;
+}
+
+.space {
+    display: inline-block;
+    width: 0.1em; /* Espacement personnalisable */
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+}
+

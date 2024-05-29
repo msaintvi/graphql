@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Dashboard - grit:lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="icone"></div>
+    <div id="page" class="bg-light p-4">
+        <h2 class="mb-3">LOGIN</h2>
+        <form id="signInForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" class="form-control" placeholder="Your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" class="form-control" placeholder="Your password" required>
+                <span id="messagePassword">Alors on sait plus écrire ? Bah clique sur l'oeil</span>
+                <br>
+                <button type="button" onclick="togglePasswordVisibility()" style="background:none;border:none;">
+                    <span id="toggleIcon">👁️</span>
+                </button>
+            </div>
+            <div id="errorMessage" class="mb-3"></div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <button id="logOutBtn" class="btn btn-secondary mt-3" style="display:none;">Log Out</button>
+    </div>
+    <footer class="footer-container">
+        <div class="container">
+          <div class="footer-copyright">
+            &copy; 2024 copyright by Zone01Rouen/A.Baudry/M.Saint-Vil
+          </div>
+        </div>
+      </footer>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
